@@ -1,0 +1,20 @@
+<?
+  $login =($_POST['login']);
+  $password = ($_POST['password']);
+$a = "Admin";
+$b = 'Admin1!';
+
+
+if ($a == $login && $b == $password) {
+	$new_url = 'index2.phtml';
+header('Location: '.$new_url);
+exit();
+} 
+
+
+else {
+header ('Location: login.phtml'); 
+exit();
+}
+?> 
+   
